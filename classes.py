@@ -1,7 +1,7 @@
 #Projeto para gerenciar tarefas diárias
 
 class Task:
-    def __init__ (self, nome, descricao, data, prazo):
+    def __init__ (self, nome, descricao, data):
         self.nome = nome
         self.descricao = descricao
         self.data = data
@@ -20,6 +20,8 @@ class Task:
 from datetime import date
 
 data_hoje = date.today()
+
+#lista_tarefas = [nome, descricao, data]
 
 nome_tarefa = input("Digite o nome da tarefa: ")
 nome_descricao = input("Digite a descrição desta tarefa: ")
